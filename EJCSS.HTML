@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Perfil</title>
+
+    <!-- Estilos CSS dentro del mismo archivo -->
+    <style>
+        /* Reseteo básico para márgenes y paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilo del cuerpo */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Estilo de la tarjeta */
+        .card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        /* Estilo de la cabecera (imagen de perfil) */
+        .card-header {
+            background-color: #4caf50;
+            padding: 20px 0;
+        }
+
+        /* Imagen de perfil */
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+        }
+
+        /* Estilo del cuerpo de la tarjeta */
+        .card-body {
+            padding: 20px;
+        }
+
+        /* Nombre */
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        /* Descripción */
+        .description {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        /* Estilo de los enlaces de contacto */
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        /* Estilo de los botones de contacto */
+        .contact-btn {
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            background-color: #4caf50;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: background-color 0.3s;
+        }
+
+        /* Efecto al pasar el mouse sobre los botones */
+        .contact-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="card-header">
+            <img src="https://via.placeholder.com/150" alt="Foto de Perfil" class="profile-img">
+        </div>
+        <div class="card-body">
+            <h2 class="name">Daniel Amores</h2>
+            <p class="description">Desarrollador web apasionado por la programación y las nuevas tecnologías. Me encanta crear soluciones innovadoras y aprender constantemente.</p>
+            <div class="contact-links">
+                <a href="mailto:daniamcar@gmail.com" class="contact-btn">📧 Correo</a>
+                <a href="https://www.linkedin.com/in/daniel-amores-8a8306278/" class="contact-btn" target="_blank">🔗 LinkedIn</a>
+                <a href="https://github.com/TemoF24" class="contact-btn" target="_blank">🐙 GitHub</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
